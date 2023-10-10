@@ -15,7 +15,7 @@ console.log("Aktualny stan projects po aktualizacji:", projects);
   <div className=" max-w-5xl mx-auto my-20">
     <BackgroundText />
     <div className="h-20"></div>
-    <h1 className=" hero text-center text-4xl md:text-8xl mb-2 "><span className=" font-playfair">Magnolia</span> <br /><span className=" font-playfair">Blog o</span> <span className="highlighted font-playfair italic">uzależnieniach</span></h1>
+    <h1 className=" hero text-center text-5xl md:text-8xl mb-2 "><span className=" font-playfair">Magnolia</span> <br /><span className=" font-playfair">Blog o</span> <span className="highlighted font-playfair italic">uzależnieniach</span></h1>
     <Link href="about"><p className=" text-center hero"><span className=" underline font-light">O poradni</span>↩</p></Link>
 
     <p className=" font-semibold mt-20 md:mt-40 pl-10 md:pl-0">Artykuły⤵</p>

@@ -25,10 +25,10 @@ const Navbar = () => {
     <header className={`fixed top-0 left-0 w-full z-50 bg-white text-gray-800 p-4 ${borderAnimation}`}>
       <div className="container mx-auto flex justify-between items-center">
         <div className="font-bold text-xl w-full">
-          <a href="/" className="hover:text-[#ffae82] logo text-4xl font-playfair">Magnolia Blog<span className='italic text-[8px]'>by</span><span className=' text-[12px] text-[#921D7F]'>Poradnia Magnolia</span></a>
+          <a href="/" className="hover:text-[#ffae82] logo  text-2xl md:text-4xl font-playfair">Magnolia Blog<span className='italic text-[8px]'>by</span><span className=' text-[12px] text-[#921D7F]'>Poradnia Magnolia</span></a>
         </div>
         <div className="md:hidden">
-          <button onClick={() => setMenuOpen(!menuOpen)} className="text-gray-500 hover:text-slate-600">
+          <button onClick={() => setMenuOpen(!menuOpen)} className="text-gray-500 hover:text-slate-600 text-xl">
             ☰
           </button>
         </div>

@@ -13,7 +13,7 @@ export default async function Project({ params }: Props) {
     const project = await getProject(slug);
 
     return (
-      <div className="max-w-5xl mx-auto my-40">
+      <div className="max-w-5xl mx-auto my-24 md:my-40">
         {/* Wyświetlenie daty publikacji nad kafelkiem */}
         <p className="text-center text-gray-700 mb-4 font-playfair text-3xl">{project.publication}</p>
 

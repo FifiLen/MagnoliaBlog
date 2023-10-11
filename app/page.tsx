@@ -25,7 +25,7 @@ console.log("Aktualny stan projects po aktualizacji:", projects);
       <div key={project.name} className=" border-x p-10">
         <p className=" text-sm font-bold">{project.publication}</p>
         <h2 className=" font-playfair text-4xl mb-3">{project.name}</h2>
-        <div className=" italic text-sm text-slate-500 mb-3"><PortableText value={project.subtitle}/></div>
+        <div className=" italic text-sm text-slate-400 mb-3"><PortableText value={project.subtitle}/></div>
 
         <Image
         src={project.image}

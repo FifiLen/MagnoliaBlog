@@ -15,7 +15,8 @@ export default async function Project({ params }: Props) {
     return (
       <div className="max-w-5xl mx-auto my-24 md:my-40">
         {/* Wyświetlenie daty publikacji nad kafelkiem */}
-        <p className="text-center text-gray-700 mb-4 font-playfair text-3xl">{project.publication}</p>
+        <p className="text-center text-gray-800 mb-4 font-playfair">{project.publication}</p>
+        
 
         <div className="p-6 border-x">
           <h1 className="text-4xl font-playfair mb-2">{project.name}</h1>

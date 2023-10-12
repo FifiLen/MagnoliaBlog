@@ -102,7 +102,7 @@ header.slideIn::before {
     background: #333;
   }
 
-  .grid {
+ /* .grid {
     display: flex;
     flex-wrap: wrap;
 }
@@ -115,7 +115,7 @@ header.slideIn::before {
 
 .grid-item-content {
     flex-grow: 1;
-}
+} */
 
 .fade-in {
   animation: fadeIn 2s forwards;

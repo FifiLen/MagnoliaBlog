@@ -19,12 +19,12 @@ console.log("Aktualny stan projects po aktualizacji:", projects);
     <Link href="about"><p className=" text-center hero"><span className=" underline font-light">O poradni</span>↩</p></Link>
 
     <p className=" font-semibold mt-20 md:mt-40 pl-10 md:pl-0">Artykuły⤵</p>
-    <div className="mt-10 grid grid-cols-2 gap-12">
+    <div className="mt-10 grid md:grid-cols-2 gap-12">
       
     { projects.map((project) => (
       <div key={project.name} className=" border-x p-10">
         <p className=" text-sm font-bold">{project.publication}</p>
-        <h2 className=" font-playfair text-4xl mb-3">{project.name}</h2>
+        <h2 className=" font-playfair text-2xl mb-3">{project.name}</h2>
         <div className=" italic text-sm text-slate-400 mb-3"><PortableText value={project.subtitle}/></div>
 
         <Image

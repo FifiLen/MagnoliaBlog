@@ -27,6 +27,12 @@ console.log("Aktualny stan projects po aktualizacji:", projects);
         <h2 className=" font-playfair text-2xl mb-3">{project.name}</h2>
         <div className=" italic text-sm text-slate-400 mb-3"><PortableText value={project.subtitle}/></div>
 
+        <Link
+        className=" "
+        href={`/projects/${project.slug}`}
+        key={project._id}
+        >
+          
         <Image
         src={project.image}
         alt={project.name}
@@ -36,13 +42,10 @@ console.log("Aktualny stan projects po aktualizacji:", projects);
         ></Image>
 
 
-        <Link
-        className=" "
-        href={`/projects/${project.slug}`}
-        key={project._id}
-        >
         
-        <p className=" font-semibold text-gray-600 p-4 border mt-2 menu">Przeczytaj artykuł →</p>
+        
+        
+        <p className=" font-semibold text-gray-700 p-4 border mt-2 menu">Przeczytaj artykuł →</p>
 
         </Link>
 

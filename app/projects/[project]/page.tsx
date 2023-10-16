@@ -2,6 +2,7 @@ import { getProject } from "@/sanity/sanity-utils";
 import { getProjects } from "@/sanity/sanity-utils";
 
 import { PortableText } from "@portabletext/react";
+
 import Image from "next/image";
 import Link from "next/link";
 

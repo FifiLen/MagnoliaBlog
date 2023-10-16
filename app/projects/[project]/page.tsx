@@ -13,11 +13,15 @@ type Props = {
 
 
 
-
 export default async function Project({ params }: Props) {
     const slug = params.project;
     const project = await getProject(slug);
     const projects = await getProjects();
+
+    
+      
+      
+
 
     return (
       <div className="max-w-6xl mx-auto my-24 md:my-40 flex justify-between">
@@ -40,9 +44,15 @@ export default async function Project({ params }: Props) {
             <PortableText value={project.content} />
           </div>
 
-          <div className=" p-4 border border-black rounded-sm mb-3 mt-4 bg-slate-100">
-            <a href={project.link} download={true}  className=" font-semibold">Pobierz pdf →</a>
-          </div>
+          {project.link && project.link.length > 0 ? (
+        <div className="p-4 border border-black rounded-sm mb-3 mt-4 bg-slate-100">
+          <a href={project.link} download={true} className="font-semibold">
+            Pobierz pdf →
+          </a>
+        </div>
+      ) : null}
+          
+
 
           <Link href="/">
             <div className=" border p-4 mt-5 rounded-sm">
@@ -53,7 +63,7 @@ export default async function Project({ params }: Props) {
         <aside className="hidden md:block w-60 bg-white overflow-y-auto border-r">
         <h3 className="font-bold text-2xl mb-5 font-playfair px-8 mt-2">Inne wpisy ⤵</h3>
         {  projects.map((project) => (
-    <div key={project.slug} className=" px-6 ml-1">  {/* Dodaj klucz dla unikalności */}
+    <div key={project.slug} className=" px-6 ml-1">  
        
         <ul>
             <Link href={`/projects/${project.slug}`}>

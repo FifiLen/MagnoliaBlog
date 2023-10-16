@@ -39,6 +39,11 @@ export default async function Project({ params }: Props) {
           <div className="content">
             <PortableText value={project.content} />
           </div>
+
+          <div className=" p-4 border border-black rounded-sm mb-3 mt-4 bg-slate-100">
+            <a href={project.link} download={true}  className=" font-semibold">Pobierz pdf →</a>
+          </div>
+
           <Link href="/">
             <div className=" border p-4 mt-5 rounded-sm">
             <p className=" font-semibold">Powrót na stronę główną →</p>

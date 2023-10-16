@@ -56,7 +56,12 @@
                 title: 'Content',
                 type: 'array',
                 of: [{ type: 'block' }]
-            }
+            },
+            {
+                name: 'link',
+                title: 'Link',
+                type: 'string',
+            },
         ]
     }
 

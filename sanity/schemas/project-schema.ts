@@ -62,6 +62,7 @@
                 title: 'Link',
                 type: 'string',
             },
+              
         ]
     }
 

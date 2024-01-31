@@ -7,6 +7,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 
+
+
 type Props = {
     params: {project: string}
 }
@@ -18,9 +20,6 @@ export default async function Project({ params }: Props) {
     const project = await getProject(slug);
     const projects = await getProjects();
 
-    
-      
-      
 
 
     return (
@@ -44,6 +43,8 @@ export default async function Project({ params }: Props) {
             <PortableText value={project.content} />
           </div>
 
+
+
           {project.link && project.link.length > 0 ? (
         <div className="p-4 border border-black rounded-sm mb-3 mt-4 bg-slate-100">
           <a href={project.link} download={true} className="font-semibold">
@@ -51,7 +52,6 @@ export default async function Project({ params }: Props) {
           </a>
         </div>
       ) : null}
-          
 
 
           <Link href="/">
@@ -76,5 +76,7 @@ export default async function Project({ params }: Props) {
 
         </aside>
       </div>
+      
     );
+    
 }
